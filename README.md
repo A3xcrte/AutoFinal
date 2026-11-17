@@ -14,7 +14,7 @@ Sitio web de una concesionaria: inventario con filtros, calculadora de mensualid
    - Página: http://localhost:8080
    - Comprobación: http://localhost:8080/diagnostico.php (debe terminar con "Todo bien")
    - phpMyAdmin: http://localhost:8081 (usuario `autoelite`, contraseña `autoelite_pass`; o `root` / `root_pass`)
-4. Entra en **Mi cuenta** con `l23140549@queretaro.tecnm.mx` / `0924Cervantes` y sube tus autos en **Panel de administración > Subir auto**. El inventario empieza vacío.
+4. Entra en **Mi cuenta** con `admin@autoelite.com` / `Demo1234` y sube tus autos en **Panel de administración > Subir auto**. El inventario empieza vacío.
 
 Comandos útiles: `docker compose logs -f web` (ver errores), `docker compose down` (apagar, conserva los datos), `docker compose down -v` (apagar y **borrar la base de datos**). Las fotos quedan en la carpeta `uploads/`.
 
@@ -28,7 +28,7 @@ Comandos útiles: `docker compose logs -f web` (ver errores), `docker compose do
 **Sin MySQL:** en `api/config.php` cambia `'driver' => 'mysql'` por `'driver' => 'sqlite'`; solo necesitas Apache.
 
 ## Administrador de ejemplo
-Correo `l23140549@queretaro.tecnm.mx`, contraseña `0924Cervantes`. 
+Correo `admin@autoelite.com`, contraseña `Demo1234`. 
 
 ## Cómo funciona
 - Cualquiera crea una cuenta y publica un auto con hasta 6 fotos (**Vende tu auto**).
