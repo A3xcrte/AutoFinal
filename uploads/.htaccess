@@ -1,0 +1,5 @@
+# Aquí solo se muestran imágenes: nunca se ejecuta código
+<FilesMatch "\.(php|phtml|phar|html|htm|js)$">
+  Require all denied
+</FilesMatch>
+Options -Indexes

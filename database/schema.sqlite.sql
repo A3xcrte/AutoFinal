@@ -1,0 +1,8 @@
+CREATE TABLE users (id INTEGER PRIMARY KEY AUTOINCREMENT, nombre TEXT NOT NULL, email TEXT NOT NULL UNIQUE, telefono TEXT NOT NULL, password_hash TEXT NOT NULL, role TEXT NOT NULL DEFAULT 'user' CHECK (role IN ('user','admin')), activo INTEGER NOT NULL DEFAULT 1, created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP);
+CREATE TABLE vehicles (id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE, marca TEXT NOT NULL, modelo TEXT NOT NULL, anio INTEGER NOT NULL, km INTEGER NOT NULL, precio REAL NOT NULL, tipo TEXT NOT NULL, combustible TEXT NOT NULL, transmision TEXT NOT NULL, descripcion TEXT NOT NULL DEFAULT '', estado TEXT NOT NULL DEFAULT 'pendiente' CHECK (estado IN ('pendiente','aprobado','rechazado','vendido')), condicion TEXT NOT NULL DEFAULT 'Seminuevo', created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP);
+CREATE INDEX vehicles_estado_idx ON vehicles (estado, created_at);
+CREATE TABLE vehicle_images (id INTEGER PRIMARY KEY AUTOINCREMENT, vehicle_id INTEGER NOT NULL REFERENCES vehicles(id) ON DELETE CASCADE, filename TEXT NOT NULL, position INTEGER NOT NULL DEFAULT 0);
+CREATE TABLE notifications (id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE, titulo TEXT NOT NULL, cuerpo TEXT NOT NULL, leida INTEGER NOT NULL DEFAULT 0, created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP);
+CREATE INDEX notifications_user_idx ON notifications (user_id, created_at);
+CREATE TABLE login_attempts (id INTEGER PRIMARY KEY AUTOINCREMENT, ip TEXT NOT NULL, created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP);
+CREATE INDEX login_attempts_idx ON login_attempts (ip, created_at);

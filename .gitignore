@@ -1,0 +1,18 @@
+# Claves de Docker (usa .env.example como plantilla)
+.env
+
+# Configuración con tus claves reales (usa api/config.example.php como plantilla)
+api/config.php
+
+# Datos generados al usar la página
+uploads/*
+!uploads/.htaccess
+storage/*
+!storage/.htaccess
+
+# Dependencias y archivos del sistema
+vendor/
+composer.lock
+.DS_Store
+Thumbs.db
+.vscode/

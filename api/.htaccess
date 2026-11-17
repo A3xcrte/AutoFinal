@@ -1,0 +1,4 @@
+# Solo index.php se puede abrir desde el navegador
+<FilesMatch "^(?!index\.php$).*\.php$">
+  Require all denied
+</FilesMatch>
