@@ -28,7 +28,7 @@ Comandos útiles: `docker compose logs -f web` (ver errores), `docker compose do
 **Sin MySQL:** en `api/config.php` cambia `'driver' => 'mysql'` por `'driver' => 'sqlite'`; solo necesitas Apache.
 
 ## Administrador de ejemplo
-Correo `l23140549@queretaro.tecnm.mx`, contraseña `0924Cervantes`. Cámbiala antes de publicar el sitio.
+Correo `l23140549@queretaro.tecnm.mx`, contraseña `0924Cervantes`. 
 
 ## Cómo funciona
 - Cualquiera crea una cuenta y publica un auto con hasta 6 fotos (**Vende tu auto**).
