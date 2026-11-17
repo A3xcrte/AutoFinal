@@ -42,5 +42,5 @@ Correo `admin@autoelite.com`, contraseña `Demo1234`.
 
 ## Notas
 - Abre siempre con `http://localhost/...`, no con doble clic ni Live Server.
-- Cambia tu WhatsApp en `js/config.js` y el correo del administrador en `api/config.php`.
+- Cambiar el WhatsApp en `js/config.js` y el correo del administrador en `api/config.php`.
 - Antes de publicar en internet: usuario de MySQL propio con contraseña, HTTPS, `'debug' => false` y borrar `diagnostico.php`.
