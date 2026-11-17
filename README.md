@@ -38,7 +38,7 @@ Correo `l23140549@queretaro.tecnm.mx`, contraseña `0924Cervantes`.
 ## Panel de administración (Mi cuenta > Panel de administración)
 - **Autos:** ve todo lo publicado (tuyo y de clientes), filtra por estado, cambia el estado (pendiente, aprobado, rechazado, vendido), edita precio y datos, o elimina.
 - **Usuarios:** cambia el rol (usuario o administrador), suspende o activa cuentas y elimina cuentas (con sus anuncios).
-- **Subir auto:** publica inventario de la concesionaria directo (Nuevo o Seminuevo) con fotos. Si usas esto, puedes vaciar los autos de ejemplo de `js/data.js`.
+- **Subir auto:** publica inventario de la concesionaria directo (Nuevo o Seminuevo) con fotos.
 
 ## Notas
 - Abre siempre con `http://localhost/...`, no con doble clic ni Live Server.
